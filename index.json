@@ -16,6 +16,17 @@
       "stability": "experimental"
     },
     {
+      "id": "sftp-wasi",
+      "name": "SFTP WASI",
+      "description": "An experimental SFTP server for modern SCP, SFTP clients, and SSHFS mounts, served as a Wasmtime-compatible WASI component.",
+      "runtime": "wasmtime",
+      "manifestPath": "recipes/sftp-wasi/sftp-wasi.fungi.md",
+      "manifestAsset": "sftp-wasi.fungi.md",
+      "homepage": "https://github.com/enbop/sftp-wasi",
+      "tags": ["files", "sftp", "scp", "sshfs", "wasi", "wasmtime"],
+      "stability": "experimental"
+    },
+    {
       "id": "socks5-wasip2",
       "name": "SOCKS5 WASIp2",
       "description": "An unauthenticated SOCKS5 TCP CONNECT proxy served as a Wasmtime-compatible WASI component.",
