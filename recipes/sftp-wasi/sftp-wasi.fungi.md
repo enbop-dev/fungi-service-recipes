@@ -8,7 +8,7 @@ run:
     url: https://github.com/enbop/sftp-wasi/releases/download/v0.1.0/sftp-wasi.wasm
   env:
     SFTP_BIND_HOST: 127.0.0.1
-    SFTP_PORT: "2222"
+    SFTP_PORT: "19222"
     SFTP_FS_ROOT: data
     SFTP_HOST_KEY: appdata/host_ed25519
   mounts:
@@ -20,7 +20,7 @@ run:
 publish:
   sftp:
     tcp:
-      port: 2222
+      port: 19222
     client:
       kind: ssh
 ---
@@ -54,7 +54,7 @@ sshfs -p PORT demo@HOST:/ /path/to/empty-mountpoint
 ```
 
 The experimental default username and password are both `demo`. The listener
-binds to `127.0.0.1:2222` on the service device. For multiple instances, copy
+binds to `127.0.0.1:19222` on the service device. For multiple instances, copy
 the recipe and change both `SFTP_PORT` and `publish.sftp.tcp.port` to a free
 port per instance.
 
