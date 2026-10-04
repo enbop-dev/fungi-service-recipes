@@ -27,7 +27,7 @@ index.json
 ## Current Recipes
 
 - `filebrowser-lite`: File Browser Lite through the Wasmtime runtime.
-- `sftp-wasi`: SFTP, modern SCP, and SSHFS through the Wasmtime runtime, with service-owned persistent files.
+- `sftp-wasi`: SFTP, modern SCP, and SSHFS access to `$fungi.workspace`, with a service-owned persistent host key.
 - `socks5-wasip2`: an unauthenticated SOCKS5 TCP proxy through the Wasmtime runtime.
 - `ssh-tunnel`: an existing SSH daemon exposed as a TCP tunnel service.
 - `webdav`: WebDAV through the Wasmtime runtime.
